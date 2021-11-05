@@ -37,7 +37,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="syscalls2.asm">
+    <MASM Include="syscalls.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
