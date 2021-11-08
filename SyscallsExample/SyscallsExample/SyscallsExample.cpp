@@ -69,9 +69,6 @@ int main(int argc, char* argv[])
 
 
     HANDLE hThread;
-    CONTEXT threadContext;
-    CLIENT_ID threadClientId;
-    USER_STACK teb;
     status = NtCreateThreadEx(&hThread, GENERIC_EXECUTE, NULL, hProcess, baseAddress, NULL, FALSE, NULL, NULL, NULL, NULL); 
     if (!NT_SUCCESS(status)) {
         printf("[-] Failed to create thread, NTSTATUS: 0x%x\n", status);
